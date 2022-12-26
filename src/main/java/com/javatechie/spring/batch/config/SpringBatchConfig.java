@@ -36,7 +36,8 @@ public class SpringBatchConfig {
     @Bean
     public FlatFileItemReader<Customer> reader(){
         FlatFileItemReader<Customer> itemReader = new FlatFileItemReader<>();
-         itemReader.setResource(new FileSystemResource("src/main/resources/annual_survey.csv"));
+//         itemReader.setResource(new FileSystemResource("src/main/resources/annual_survey.csv"));
+         itemReader.setResource(new FileSystemResource("src/main/resources/customers.csv"));
          itemReader.setName("csvReader");
          itemReader.setLinesToSkip(1);
          itemReader.setLineMapper(lineMapper());
@@ -48,8 +49,8 @@ public class SpringBatchConfig {
         DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
         lineTokenizer.setDelimiter(",");
         lineTokenizer.setStrict(false);
-//        lineTokenizer.setNames("id","firstName","lastName","email","gender","contactNo","country","dob");
-        lineTokenizer.setNames("id","Year","Industry_aggregation_NZSIOC","Industry_code_NZSIOC","Industry_name_NZSIOC","Units","Variable_code","Variable_name","Variable_category","Value","Industry_code_ANZSIC06");
+        lineTokenizer.setNames("id","firstName","lastName","email","gender","contactNo","country","dob");
+//        lineTokenizer.setNames("id","Year","Industry_aggregation_NZSIOC","Industry_code_NZSIOC","Industry_name_NZSIOC","Units","Variable_code","Variable_name","Variable_category","Value","Industry_code_ANZSIC06");
 
         BeanWrapperFieldSetMapper<Customer> fieldSetMapper = new BeanWrapperFieldSetMapper<>();
         fieldSetMapper.setTargetType(Customer.class);

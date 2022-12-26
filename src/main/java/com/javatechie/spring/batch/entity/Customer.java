@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "customers_info_temp")
+@Table(name = "customers_info")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,32 +20,23 @@ public class Customer {
     @Column(name = "CUSTOMER_ID")
     private int id;
 
-    @Column(name = "YEAR")
-    private String Year;
+    @Column(name = "FIRST_NAME")
+    private String firstName;
 
-    @Column(name = "INDUSTRY_AGGREGATION_NZSIOC")
-    private String Industry_aggregation_NZSIOC;
-    @Column(name = "INDUSTRY_CODE_NZSIOC")
-    private String Industry_code_NZSIOC;
+    @Column(name = "LAST_NAME")
+    private String lastName;
+    @Column(name = "EMAIL")
+    private String email;
 
-    @Column(name = "INDUSTRY_NAME_NZSIOC")
-    private String Industry_name_NZSIOC;
+    @Column(name = "GENDER")
+    private String gender;
 
-    @Column(name = "UNITS")
-    private String Units;
+    @Column(name = "CONTACT_NO")
+    private String contactNo;
 
-    @Column(name = "VARIABLE_CODE")
-    private String Variable_code;
+    @Column(name = "COUNTRY")
+    private String country;
 
-    @Column(name = "VARIABLE_NAME")
-    private String Variable_name;
-
-    @Column(name = "VARIABLE_CATEGORY")
-    private String Variable_category;
-
-    @Column(name = "VALUE")
-    private String Value;
-
-    @Column(name = "INDUSTRY_CODE_ANZSIC06")
-    private String Industry_code_ANZSIC06;
+    @Column(name = "DOB")
+    private String dob;
 }
