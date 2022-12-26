@@ -16,6 +16,3 @@ spring.batch.initialize-schema=ALWAYS
 spring.batch.job.enabled=false
 ```
 
-### before creating database
-
-<img src="https://github.com/livingstonantony70/batch-processing-demo/blob/main/demo/1.png" width="200" height="400"/>  
