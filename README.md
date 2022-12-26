@@ -15,4 +15,7 @@ spring.batch.initialize-schema=ALWAYS
 #disabled job run at startup
 spring.batch.job.enabled=false
 ```
-![one](demo/1.png)
+
+### before creating database
+
+<img src="https://github.com/livingstonantony70/batch-processing-demo/blob/main/demo/1.png" width="200" height="400"/>  
