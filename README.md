@@ -17,4 +17,6 @@ spring.batch.job.enabled=false
 ```
 
 
-<img src="https://github.com/livingstonantony70/batch-processing-demo/blob/main/demo/1.png" width="250" height="500"/>  
+<img src="https://github.com/livingstonantony70/batch-processing-demo/blob/main/demo/1.png" />  
+<img src="https://github.com/livingstonantony70/batch-processing-demo/blob/main/demo/2.png" /> 
+<img src="https://github.com/livingstonantony70/batch-processing-demo/blob/main/demo/3.png" /> 
